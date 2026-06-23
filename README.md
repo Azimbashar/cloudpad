@@ -1,16 +1,51 @@
-# React + Vite
+# CloudPad ☁️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CloudPad is a modern cloud-based note-taking application built with React and Firebase. It allows users to create, edit, and manage their notes in real time with a clean and responsive user interface.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://cloudpad.netlify.app
 
-## React Compiler
+## 📂 GitHub Repository
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+https://github.com/Azimbashar/cloudpad
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* 📝 Create, edit, and delete notes
+* 🎤 Write notes using voice recognition (Speech-to-Text)
+* 🔊 Listen to notes using Text-to-Speech
+* ☁️ Store notes securely with Firebase Realtime Database
+* ⚡ Fast performance with Vite
+* 📱 Fully responsive design
+* 🎨 Modern and clean user interface
+* 🔍 Search notes instantly
+
+
+## 🛠️ Tech Stack
+
+* React.js
+* Vite
+* JavaScript
+* CSS
+* Firebase Realtime Database
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/Azimbashar/cloudpad.git
+
+cd cloudpad
+
+npm install
+
+npm run dev
+```
+
+## 📸 Screenshots
+
+
+
+## 👨‍💻 Author
+
+Azim Bashar
