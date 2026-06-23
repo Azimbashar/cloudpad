@@ -44,6 +44,10 @@ npm run dev
 
 ## 📸 Screenshots
 
+![CloudPad Home](./screenshots/homepage.png)
+![CloudPad Signin](./screenshots/signin.png)
+![CloudPad Notes](./screenshots/notepage.png)
+![CloudPad Account](./screenshots/account.png)
 
 
 ## 👨‍💻 Author
