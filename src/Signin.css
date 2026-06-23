@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.sign-page{
+    height: calc(100vh - 6vw);
+    width:100vw ;
+    margin-top: 6vw;
+    min-height:10vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign-box{
+    height:30vw;
+    width:55vw;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    position:relative;
+    border: .2vw solid black;
+    box-shadow: .1vw .1vw .7vw gray;
+}
+.phone-slide{
+            border:.5vw solid black;
+            width:87%;
+            cursor:pointer;
+            border-radius:4.4vw;
+            background:white;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            display: none;
+}
+.phone-slide h2{ padding:3% 5%;}
+.slider{
+    display: flex;
+}
+.form-1 ,.form-2{
+    background:white;
+    height:100%;
+    width:50%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-direction:column;
+}
+.f1-div{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    height:7%;
+    font-size: 2.3vw;
+}
+.f1-div-inp{
+    font-size: 1.1vw;
+    height:100%;
+    width: 80%;
+    padding:0 2%;
+    outline:none;
+}
+.activef1inp{
+    width: 50%;
+}
+.form-1 h1,.form2 h1{font-size: 2.5vw;}
+.f1-inputs{
+    height:7%;
+    width:80%;
+    padding:0 2%;
+    outline:none;
+    font-size: 1.1vw;
+}
+.f1-inputs:nth-child(5){
+    height:8%;
+    background:#E2852E;
+    border:none;
+    cursor:pointer;
+    padding-left:.5vw;
+}
+.f1-inputs:nth-child(7){
+   width:84%;
+   background:#E2852E;
+   border:none;
+   cursor:pointer;
+   margin-top: 1vw;
+}
+.form-2{
+    gap:2vw;
+    justify-content:center;
+}
+.f2-inputs{
+    height:7%;
+    width:80%;
+    padding:0 2%;
+    outline:none;
+    font-size: 1.1vw;
+}
+.f2-inputs:nth-child(4){
+    height:8%;
+    width:84%;
+    background:#E2852E;
+    border:none;
+    cursor:pointer;
+}
+
+@media (max-width: 850px)  and (min-width: 600px) {
+    .sign-page{margin-top: 9vw;height: calc(100vh - 9vw);}
+}
+@media (max-width: 600px) {
+    .sign-page{height: calc(100dvh - 18vw);margin-top: 18vw;}
+    .sign-box{
+        height: 100%;
+        width: 100%;
+        border: none;
+        flex-direction: column;
+    }
+    .form-1{
+             width: 100%;
+             justify-content: center;
+             gap: 6vw;
+             height: 60%;
+             display: none;
+            }
+    .f1-inputs, .f2-inputs{width: 90vw;
+              font-size: 5vw;
+              height: 15%;
+    }
+    .f1-div{font-size: 11vw;height: 15%;}
+    .f1-div-inp{font-size: 5vw; width: 90%}
+    .activef1inp{width: 65%;}
+    .form-1 h1,.form-2 h1{font-size: 8vw; margin-bottom:10vw ; display: none;}
+    .f1-inputs:nth-child(7){width: 90%;margin-top: 10vw; height: 15%;}
+    .form-2{ width: 100%;
+             justify-content: center;
+             height: 60%;
+             gap: 6vw;}
+    .phone-slide{display: block;display: flex;}
+    .slider{display: none;}
+    .f2-inputs:nth-child(4){width: 90%;margin-top: 10vw; height: 15%;}
+}

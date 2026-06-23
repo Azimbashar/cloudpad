@@ -1,0 +1,307 @@
+/* ================= GLOBAL ================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  background: #f4fff7;
+}
+
+/* ================= WRAPPER ================= */
+
+.account-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dark{background-color: black;}
+/* -------- Desktop -------- */
+@media (min-width: 993px) {
+  .account-wrapper {
+    margin-top: 6vw;
+    height: calc(100vh - 6vw);
+  }
+}
+
+/* -------- Tablet -------- */
+@media (max-width: 992px) and (min-width: 601px) {
+  .account-wrapper {
+    margin-top: 9vw;
+    height: calc(100vh - 9vw);
+  }
+}
+
+/* -------- Mobile -------- */
+@media (max-width: 600px) {
+  .account-wrapper {
+    margin-top: 18vw;
+    height: calc(100dvh - 18vw);
+  }
+}
+
+/* ===========Change Password======= */
+.operation-box{
+  height: 20vw;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.904);
+  position: absolute;
+  top: 20%;
+  left: 29%;
+  z-index: 10;
+  border-radius: 2vw;
+  border: .2vw solid green;
+  box-shadow: .1vw .1vw .3vw;
+ 
+}
+.operation-box h2{font-size: 2vw;display: flex;align-items: center;justify-content: center;}
+.operation-box p{font-size: 2vw;margin: 0 .7vw;}
+.operation-box input{height: 15%;width: 80%; outline: none;border: .2vw solid green;border-radius: .5vw;padding-left: 1vw;font-size: 1.2vw;}
+.operation-box button{height: 15%;width: 80%;border: .2vw solid green;border-radius: .5vw;font-size: 1.2vw;background-color: green;color: white;cursor: pointer;}
+.operation-box i{
+  position: absolute;
+  top: .7vw;
+  right: .7vw;
+  font-size: 1.5vw;
+  color: black;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+.operation-box i:hover{scale: 1.2;}
+/* ================= CARD ================= */
+
+.account-card {
+  width: 75%;
+  max-width: 1100px;
+  height: 73%;
+  max-height: 750px;
+  background: white;
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  position: relative;
+}
+
+/* ================= LEFT SECTION ================= */
+
+.left-section {
+  flex: 1;
+  height: 100%;
+  background: linear-gradient(135deg, #0f9d58, #0b6e3c);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 40px 20px;
+  text-align: center;
+}
+.left-2{
+    width: 70%;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.left-2 i{font-size: 1vw;margin-right: .3vw;}
+.profile-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.left-section h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.left-section p {
+  font-size: 14px;
+}
+
+.logout-btn {
+  margin-top: 15px;
+  padding: 8px 22px;
+  border: none;
+  background: white;
+  color: #0b6e3c;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: black;
+  color: white;
+}
+
+/* ================= RIGHT SECTION ================= */
+
+.right-section {
+  flex: 2;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* ---------- STATS ---------- */
+
+.stats-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  flex: 1;
+  background: #dcf7e3;
+  border-left: 5px solid #0f9d58;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.stat-box h4 {
+  font-size: 14px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.stat-box p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0f9d58;
+}
+
+.storage-percent{height: 1vw;width: 60%;}
+
+/* ---------- SETTINGS ---------- */
+
+.settings-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.settings-box label {
+  font-size: 14px;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.small-btn {
+  background: #0f9d58;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.small-btn:hover {
+  background: #0b6e3c;
+}
+
+.delete-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background: #333;
+}
+
+/* ================= RESPONSIVE LAYOUT ================= */
+
+/* Tablet & Below */
+@media (max-width: 992px) {
+  .account-card {
+    flex-direction: column;
+  }
+
+  .left-section {
+    padding: 30px 15px;
+    justify-content: space-between;
+  }
+   .left-2{height: 20vw;}
+
+  .right-section {
+    padding: 30px 20px;
+  }
+  .storage-percent{height: 3vw;width: 100%;}
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .account-card {
+    border-radius: 15px;
+    width: 90%;
+    height: 95%;
+  }
+  .left-2 i{font-size: 3vw;margin-right: 1vw;}
+  .operation-box{
+    height: 60vw;
+    width: 75vw;
+    top: 20%;
+    left: 8%;
+  }
+  .operation-box h2{font-size: 4vw;}
+  .operation-box p{font-size: 4vw;margin: 0 1.5vw;}
+  .operation-box input{
+    padding-left: 2vw;
+    font-size: 3.6vw;
+  }
+  .operation-box button{
+    font-size: 3.6vw;
+  }
+  .operation-box i{font-size: 5vw; top: 1.7vw;}
+  .left-section{height: 20%;flex-direction: row;padding: 13px;}
+  .left-2{height: 30vw;}
+  .stats-row {
+    flex-direction: column;
+  }
+
+  .stat-box {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .profile-img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .right-section {
+    padding: 20px;
+  }
+}
