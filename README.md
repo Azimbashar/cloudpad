@@ -4,11 +4,11 @@ CloudPad is a modern cloud-based note-taking application built with React and Fi
 
 ## 🚀 Live Demo
 
-https://your-netlify-url.netlify.app
+https://cloudpad.netlify.app
 
 ## 📂 GitHub Repository
 
-https://github.com/your-username/cloudpad
+https://github.com/Azimbashar/cloudpad
 
 ## ✨ Features
 
