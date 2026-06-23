@@ -12,11 +12,15 @@ https://github.com/Azimbashar/cloudpad
 
 ## ✨ Features
 
-* Create, edit, and delete notes
-* Real-time data storage using Firebase Realtime Database
-* Responsive design for mobile and desktop
-* Fast performance with Vite
-* Modern and clean UI
+* 📝 Create, edit, and delete notes
+* 🎤 Write notes using voice recognition (Speech-to-Text)
+* 🔊 Listen to notes using Text-to-Speech
+* ☁️ Store notes securely with Firebase Realtime Database
+* ⚡ Fast performance with Vite
+* 📱 Fully responsive design
+* 🎨 Modern and clean user interface
+* 🔍 Search notes instantly
+
 
 ## 🛠️ Tech Stack
 
@@ -29,7 +33,7 @@ https://github.com/Azimbashar/cloudpad
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/your-username/cloudpad.git
+git clone https://github.com/Azimbashar/cloudpad.git
 
 cd cloudpad
 
